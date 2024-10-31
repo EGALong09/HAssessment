@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hassessment
+    username: root
+#    password: ServiceElichika09! #上云要修改这里的密码ServiceElichika09!
+    password: Elichika09
+
+
+accessFile:
+  avatarHandler: /static/avatar/** #前端访问路径
+  avatarLocation: E:/aaaaaaMyWork/static/HAssessment/avatar/  #本地文件夹
+  headImgHandler: /static/headImg/** #前端访问路径
+  headImgLocation: E:/aaaaaaMyWork/static/HAssessment/headImg/  #本地文件夹
+
+serviceFile:
+  avatarHandler: /static/avatar/** #前端访问路径
+  avatarLocation: /static/Hassessment/AvatarUpload/  #本地文件夹
+  headImgHandler: /static/headImg/** #前端访问路径
+  headImgLocation: /static/Hassessment/HeadImg/  #本地文件夹
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启模糊命名和下划线自动命名的转化
+server:
+  port: 8088
